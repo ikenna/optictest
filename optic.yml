@@ -1,0 +1,5 @@
+files:
+  - path: api.yaml
+    id: Product-Catalog-API
+ruleset:
+  - breaking-changes

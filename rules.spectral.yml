@@ -6,7 +6,6 @@ rules:
     severity: error
     given: "$.paths[*]~"
     then:
-      # field: "path"
       function: "pattern"
       functionOptions:
         match: "^/v2/.*"

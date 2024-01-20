@@ -1,0 +1,13 @@
+
+rules:
+  version2-check:
+    description: "Check if URI path includes a v2"
+    message: "URI path must include a v2"
+    severity: error
+    given: "$.paths[*]~"
+    then:
+      # field: "path"
+      function: "pattern"
+      functionOptions:
+        match: "^/v2/.*"
+

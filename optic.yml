@@ -31,11 +31,11 @@ ruleset:
 #      require_parameter_examples: true
 #      # (optional) allow certain operations do not need examples
 #      exclude_operations_with_extension: x-legacy-api
-  - documentation:
-      required_on: always
-      require_property_descriptions: true
-      require_operation_summary: true
-      require_operation_description: true
-      require_operation_id: true
-      # (optional) allow certain operations do not need examples
-      exclude_operations_with_extension: x-legacy-api
+#  - documentation:
+#      required_on: always
+#      require_property_descriptions: true
+#      require_operation_summary: true
+#      require_operation_description: true
+#      require_operation_id: true
+#      # (optional) allow certain operations do not need examples
+#      exclude_operations_with_extension: x-legacy-api

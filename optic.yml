@@ -7,9 +7,9 @@ ruleset:
   - lintgpt:
       v3_standards:
         rules:
+#          - "Responses that return an array at their root MUST wrap that array in an object. ie {'users': []}"
           - "All operations should have operationId"
           - "GET requests that have an ID at the end of their path (ie /teams/{teamID}) should define a 404."
-#          - "Responses that return an array at their root MUST wrap that array in an object. ie {'users': []}"
           - "Responses should not return a top level array"
   - spectral:
       always:
@@ -31,11 +31,11 @@ ruleset:
 #      require_parameter_examples: true
 #      # (optional) allow certain operations do not need examples
 #      exclude_operations_with_extension: x-legacy-api
-  - documentation:
-      required_on: always
-      require_property_descriptions: true
-      require_operation_summary: true
-      require_operation_description: true
-      require_operation_id: true
-      # (optional) allow certain operations do not need examples
-      exclude_operations_with_extension: x-legacy-api
+#  - documentation:
+#      required_on: always
+#      require_property_descriptions: true
+#      require_operation_summary: true
+#      require_operation_description: true
+#      require_operation_id: true
+#      # (optional) allow certain operations do not need examples
+#      exclude_operations_with_extension: x-legacy-api

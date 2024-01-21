@@ -9,4 +9,3 @@ rules:
       function: "pattern"
       functionOptions:
         match: "^/v2/.*"
-

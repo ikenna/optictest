@@ -1,13 +1,15 @@
 files:
   - path: api.yaml
     id: Product-Catalog-API
+  - path: simpleapi.yaml
+    id: Sample-API
 ruleset:
-#  - lintgpt:
-#      v3_standards:
-#        rules:
-#          - "All operations should have operationId"
-#          - "GET requests that have an ID at the end of their path (ie /teams/{teamID}) should define a 404."
-#          - "Responses that return an array at their root MUST wrap that array in an object. ie {'users': []}"
+  - lintgpt:
+      v3_standards:
+        rules:
+          - "All operations should have operationId"
+          - "GET requests that have an ID at the end of their path (ie /teams/{teamID}) should define a 404."
+          - "Responses that return an array at their root MUST wrap that array in an object. ie {'users': []}"
   - spectral:
       always:
         - rules.spectral.yml

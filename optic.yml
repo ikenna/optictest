@@ -9,7 +9,7 @@ ruleset:
         rules:
 #          - "Responses that return an array at their root MUST wrap that array in an object. ie {'users': []}"
           - "If a property’s name implies it is a monetary amount, it must use number format."
-          - "All operations should have operationId"
+          - "If a GET operation has a response with a top level data property that is of type array, then it should have some form of pagination."
           # - "GET requests that have an ID at the end of their path (ie /teams/{teamID}) should define a 404."
           # - "Responses should not return a top level array"
   - spectral:

@@ -3,20 +3,14 @@ info:
   title: Sample API
   version: 1.0.0
 paths:
-  /v1/users:
+  /v1/products:
     get:
-      summary: Get all users
-      responses:
-        "200":
-          description: OK
-  /users:
-    get:
-      summary: Get all users (without version)
+      summary: Get all products
       responses:
         "200":
           description: OK
           content:
-            application/vnd.api+json:
+            application/json:
               schema:
                 type: object
                 properties:
@@ -27,7 +21,9 @@ paths:
                       properties:
                         id:
                           type: string
-                        price:
+                        cost_price:
                           type: string
-                        amount:
+                        selling_price:
+                          type: string
+                        vat_amount:
                           type: string

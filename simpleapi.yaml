@@ -3,15 +3,27 @@ info:
   title: Sample API
   version: 1.0.0
 paths:
-  /v1/users:
+  /v1/products:
     get:
-      summary: Get all users
+      summary: Get all products
       responses:
         "200":
           description: OK
-  /users:
-    get:
-      summary: Get all users (without version)
-      responses:
-        "200":
-          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        cost_price:
+                          type: string
+                        selling_price:
+                          type: string
+                        vat_amount:
+                          type: string
